@@ -134,8 +134,7 @@ Jadi, jawabannya adalah Positip <b>123<sub>10</sub></b></code>
 <code>1111 0111<sub>2</sub> (invert) -> 0000 1000<sub>2</sub>
 0000 1000 + 1 = 0000 1001<sub>2</sub>
 0000 1001<sub>2</sub> = 9<sub>10</sub>
-Jadi, jawabannya adalah <b>-9</b></code>
-Jadi, jawabannya adalah Positip <b>123<sub>10</sub></b></code>
+Jadi, jawabannya adalah <b>-9<sub>10</sub></b></code>
 <h2>Nomor 19</h2>
 <p>Nyatakan ASCII Code 5A<sub>16</sub> dalam bentuk karakter</p>
 <code>5 x 16<sup>1</sup> + 10 x 16<sup>0</sup> = 90<sub>10</sub> -> ‘Z’
