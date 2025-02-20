@@ -1,7 +1,7 @@
 <h1>Sistem bilangan</h1>
-<h2>1.</h2>
+<h2>Nomor 1</h2>
 <p>a. Bilangan biner adalah bilangan yang berbasis <b>dua</b></p>
-<h2>2.</h2>
+<h2>Nomor 2</h2>
 <p>Konversikan bilangan desimal 1234<sub>10</sub> dalam bilangan biner</p>
 <code>1234 / 2 = 617 sisa 0
 617 / 2 = 308 sisa 1
@@ -16,3 +16,5 @@
 1 / 2 = 0 sisa 1</code>
 
 Jadi, jawabannya adalah <b> 10011010010 (a)</b>
+<h2>Nomor 3</h2>
+<p>Konversikan bilangan biner 10101010<sub>2</sub> ke dalam bilangan desimal</p>
