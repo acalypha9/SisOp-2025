@@ -3,7 +3,8 @@
 <p>Bilangan biner adalah bilangan yang berbasis <b>dua</b></p>
 <h2>Nomor 2</h2>
 <p>Konversikan bilangan desimal 1234<sub>10</sub> dalam bilangan biner</p>
-<code>1234 / 2 = 617 sisa 0
+<code>
+1234 / 2 = 617 sisa 0
 617 / 2 = 308 sisa 1
 308 / 2 = 154 sisa 0
 154 / 2 = 77 sisa 0
