@@ -1,3 +1,6 @@
+<code>Nama : Fahroldhi Sukirno</code>
+<code>NRP : 3124500046</code>
+<code>Kelas : D3 Teknik Informatika</code>
 <h1>Sistem bilangan</h1>
 <h2>Nomor 1</h2>
 <p>Bilangan biner adalah bilangan yang berbasis <code><b>dua</b></code></p>
