@@ -18,7 +18,6 @@ The three main purposes of an operating system are:
 The main goal of a multiprogramming system is to increase CPU utilization by organizing jobs so that the CPU always has one to execute. This is achieved by allowing multiple jobs to reside in memory simultaneously, so when one job waits for I/O operations, another can use the CPU.
 
 ---
-
 <b>1.3 What is the main advantage of a multiprocessor system?</b>
 
 Multiprocessor systems have several advantages:
