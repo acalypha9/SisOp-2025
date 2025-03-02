@@ -31,8 +31,8 @@ Multiprocessor systems have several advantages:
 
 <b>1.4 What are the differences between symmetric and asymmetric multiprocessing?</b>
 
-<b>Asymmetric multiprocessing</b>: Each processor is assigned a specific task. A master processor controls the system; the other processors either look to the master for instruction or have predefined tasks. This scheme defines a master-slave relationship.</br></br>
-<b>Symmetric multiprocessing (SMP)</b>: Each processor performs all tasks within the operating system. All processors are peers; no master-slave relationship exists. Each processor has its own set of registers and main memory, but they share the same physical memory.
+<b>Symmetric multiprocessing (SMP)</b>: Each processor performs all tasks within the operating system. All processors are peers; no master-slave relationship exists. Each processor has its own set of registers and main memory, but they share the same physical memory.</br></br>
+<b>Asymmetric multiprocessing</b>: Each processor is assigned a specific task. A master processor controls the system; the other processors either look to the master for instruction or have predefined tasks. This scheme defines a master-slave relationship.
 
 ---
 
