@@ -69,9 +69,8 @@ int main() {
 ```
 
 #### **Output**
-```
-(gambar)
-```
+![image](https://github.com/user-attachments/assets/20b4d5e4-37a5-4861-b569-44481e572fe4)
+
 (Program berjalan terus hingga ditekan `CTRL+C`.)
 
 #### **Apa yang terjadi ?**
@@ -115,9 +114,8 @@ int main() {
 ```
 
 #### **Output**
-```
-(gambar)
-```
+![image](https://github.com/user-attachments/assets/0b4f2ca2-346b-49a3-917b-0d363cacc107)
+
 (Urutan output bisa berbeda tergantung eksekusi proses.)
 
 #### **Apa yang terjadi ?**
@@ -173,9 +171,8 @@ menggunakan FCFS, SJF, prioritas nonpreemptive dan round robin.*
 #### **Gantt Chart**  
 **1. FCFS (First Come First Serve)**  
 Urutan: P1 → P2 → P3 → P4 → P5  
-```
-(gambar)
-```  
+![1](https://github.com/user-attachments/assets/957c43c9-eb14-475e-a5ef-ceeebbbfe849)  
+
 Penjelasan Rinci:
 
 1. P1 dimulai pada waktu 0 dan berjalan selama 10 unit waktu (0-10).
@@ -190,9 +187,8 @@ Penjelasan Rinci:
 
 **2. SJF Nonpreemptive**  
 Urutan: P2 (1) → P4 (1) → P3 (2) → P5 (5) → P1 (10)  
-```
-(gambar)  
-```  
+![2](https://github.com/user-attachments/assets/59acc0fc-d9df-41e6-b6ad-53ee50b0f314)
+
 Penjelasan Rinci:
 
 1. P2 (waktu eksekusi 1) dimulai pada waktu 0 dan selesai pada waktu 1.
@@ -207,9 +203,8 @@ Penjelasan Rinci:
 
 **3. Prioritas Nonpreemptive**  
 Urutan: P2 (1) → P5 (2) → P1 (3) → P3 (3) → P4 (4)  
-```
-(gambar)
-```  
+![3](https://github.com/user-attachments/assets/06d50e98-59ee-48d8-8c15-debb25b3a2a8)
+
 Penjelasan Rinci:
 
 1. P2 (prioritas tertinggi) dimulai pada waktu 0 dan selesai pada waktu 1.
@@ -224,9 +219,8 @@ Penjelasan Rinci:
 
 **4. Round Robin (Quantum = 2)**  
 Urutan eksekusi dengan pembagian waktu:  
-```
-(gambar)
-```  
+![4](https://github.com/user-attachments/assets/05d1b633-80e8-414b-970a-3d7e36422328)
+  
 Penjelasan Rinci:
 
 1. P1 dimulai pada waktu 0, berjalan selama 2 unit waktu (0-2), kemudian P2 dijalankan.
