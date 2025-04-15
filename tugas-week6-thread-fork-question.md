@@ -218,7 +218,7 @@ Penjelasan Rinci:
 5. P4 (prioritas terendah) dimulai pada waktu 12 dan selesai pada waktu 19.
 
 **4. Round Robin (Quantum = 2)**  
-Urutan eksekusi dengan pembagian waktu:  
+Urutan :  P1 → P2 → P3 → P4 → P5 → P1 → P5 → P1 → P5 → P1 → P1
 ![4](https://github.com/user-attachments/assets/05d1b633-80e8-414b-970a-3d7e36422328)
   
 Penjelasan Rinci:
