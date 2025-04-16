@@ -169,7 +169,7 @@ menggunakan FCFS, SJF, prioritas nonpreemptive dan round robin.*
 | P5     | 5          | 2         |  
 
 #### **Gantt Chart**  
-**1. FCFS (First Come First Serve)**  
+**1. FCFS**  
 Urutan: P1 → P2 → P3 → P4 → P5  
 ![1](https://github.com/user-attachments/assets/957c43c9-eb14-475e-a5ef-ceeebbbfe849)  
 
@@ -185,53 +185,90 @@ Penjelasan Rinci:
 
 5. P5 dimulai pada waktu 14 dan berjalan selama 5 unit waktu (14-19).
 
-**2. SJF Nonpreemptive**  
+**2. SJF**  
 Urutan: P2 (1) → P4 (1) → P3 (2) → P5 (5) → P1 (10)  
 ![2](https://github.com/user-attachments/assets/59acc0fc-d9df-41e6-b6ad-53ee50b0f314)
 
 Penjelasan Rinci:
 
-1. P2 (waktu eksekusi 1) dimulai pada waktu 0 dan selesai pada waktu 1.
+1. P2 dimulai pada waktu 0 dan selesai pada waktu 1.
 
-2. P4 (waktu eksekusi 1) dimulai pada waktu 1 dan selesai pada waktu 2.
+2. P4 dimulai pada waktu 1 dan selesai pada waktu 2.
 
-3. P3 (waktu eksekusi 2) dimulai pada waktu 2 dan selesai pada waktu 4.
+3. P3 dimulai pada waktu 2 dan selesai pada waktu 4.
 
-4. P5 (waktu eksekusi 5) dimulai pada waktu 4 dan selesai pada waktu 9.
+4. P5 dimulai pada waktu 4 dan selesai pada waktu 9.
 
-5. P1 (waktu eksekusi 10) dimulai pada waktu 9 dan selesai pada waktu 19.
+5. P1 dimulai pada waktu 9 dan selesai pada waktu 19.
 
-**3. Prioritas Nonpreemptive**  
-Urutan: P2 (1) → P5 (2) → P1 (3) → P3 (3) → P4 (4)  
-![3](https://github.com/user-attachments/assets/06d50e98-59ee-48d8-8c15-debb25b3a2a8)
+**3. Prioritas Nonpreemptive Priority**  
+Urutan: P2 → P5 → P1 → P3 → P1 → P3 → P1 → P4 
+![3](https://github.com/user-attachments/assets/eb0116eb-c01e-48dc-9182-8e68d870c3e2)
+
 
 Penjelasan Rinci:
 
-1. P2 (prioritas tertinggi) dimulai pada waktu 0 dan selesai pada waktu 1.
+1. P2 dimulai pada waktu 0 dan selesai pada waktu 1.
 
-2. P5 (prioritas tinggi) dimulai pada waktu 1 dan selesai pada waktu 3.
+2. P5 dimulai pada waktu 1 dan selesai pada waktu 6.
 
-3. P1 (prioritas sedang) dimulai pada waktu 6 dan selesai pada waktu 9.
+3. P1 dimulai pada waktu 6 dan selesai pada waktu 7.
 
-4. P3 (prioritas lebih rendah) dimulai pada waktu 9 dan selesai pada waktu 12.
+4. P3 dimulai pada waktu 7 dan selesai pada waktu 8.
 
-5. P4 (prioritas terendah) dimulai pada waktu 12 dan selesai pada waktu 19.
+5. P1 dimulai pada waktu 8 dan selesai pada waktu 9.
 
-**4. Round Robin (Quantum = 2)**  
+6. P3 dimulai pada waktu 9 dan selesai pada waktu 10.
+
+7. P1 dimulai pada waktu 10 dan selesai pada waktu 18.
+
+8. P4 dimulai pada waktu 18 dan selesai pada waktu 19.
+
+**4. Round Robin (Quantum = 1)**  
 Urutan :  P1 → P2 → P3 → P4 → P5 → P1 → P5 → P1 → P5 → P1 → P1
-![4](https://github.com/user-attachments/assets/05d1b633-80e8-414b-970a-3d7e36422328)
+![4](https://github.com/user-attachments/assets/3f2664f2-0a30-44e6-8c78-94906b80cb08)
+
   
 Penjelasan Rinci:
 
-1. P1 dimulai pada waktu 0, berjalan selama 2 unit waktu (0-2), kemudian P2 dijalankan.
+1. P1 dimulai pada waktu 0 dan selesai pada waktu 1.
 
-2. P2 berjalan selama 2 unit waktu (2-4), kemudian proses berlanjut ke P3.
+2. P2 dimulai pada waktu 1 dan selesai pada waktu 2.
 
-3. P3 berjalan selama 2 unit waktu (4-6), dan seterusnya.
+3. P3 dimulai pada waktu 2 dan selesai pada waktu 3.
 
-4. Setelah setiap time quantum habis, proses dipindahkan ke antrian dan giliran eksekusi berlanjut ke proses berikutnya.
+4. P4 dimulai pada waktu 3 dan selesai pada waktu 4.
 
-5.  Setelah semua proses berjalan, P1 dan P5 kembali ke antrian dan terus berjalan sesuai time quantum hingga selesai.
+5. P5 dimulai pada waktu 4 dan selesai pada waktu 5.
+
+6. P1 dimulai pada waktu 5 dan selesai pada waktu 6.
+
+7. P3 dimulai pada waktu 6 dan selesai pada waktu 7.
+  
+8. P5 dimulai pada waktu 7 dan selesai pada waktu 8.
+
+9. P1 dimulai pada waktu 8 dan selesai pada waktu 9.
+
+10. P5 dimulai pada waktu 9 dan selesai pada waktu 10.
+  
+11. P1 dimulai pada waktu 10 dan selesai pada waktu 11.
+   
+12. P5 dimulai pada waktu 11 dan selesai pada waktu 12.
+
+13. P1 dimulai pada waktu 12 dan selesai pada waktu 13.
+  
+14. P5 dimulai pada waktu 13 dan selesai pada waktu 14.
+
+15. P1 dimulai pada waktu 14 dan selesai pada waktu 15.
+
+16. P1 dimulai pada waktu 15 dan selesai pada waktu 16.
+
+17. P1 dimulai pada waktu 16 dan selesai pada waktu 17.
+
+18. P1 dimulai pada waktu 17 dan selesai pada waktu 18.
+
+19. P1 dimulai pada waktu 18 dan selesai pada waktu 19.
+
 ---
 
 **Penjelasan Singkat Algoritma:**  
