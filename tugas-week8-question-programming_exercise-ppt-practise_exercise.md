@@ -188,7 +188,7 @@ sum = 0;
 
 #### **Output**
 
-
+![image](https://github.com/user-attachments/assets/d952e54a-8ef2-4b02-896d-09a190f2e71c)
 
 
 #### **Apa yang terjadi ?**
@@ -203,7 +203,7 @@ Program ini menunjukkan bagaimana multithreading dapat digunakan untuk memisahka
 ---
 ## 3. PPT evolusi teknologi processor Intel
 
-(PPT)
+[evolusi_prosesor_intel.pptx](https://github.com/user-attachments/files/19784913/evolusi_prosesor_intel.pptx)
 
 ---
 
@@ -313,9 +313,11 @@ $$
 
 
 di mana:
+
 $$
 P = bagian \ program \ yang \ bisa \ diparalelkan \ (dalam\ desimal)
-$$  
+$$
+
 $$
 N = jumlah\ inti\ prosesor\ (core)
 $$
@@ -327,10 +329,10 @@ $$
 Dalam soal ini:
 
 $$
-P = 0.60\ (atau\ 60\%)
+P = 0.60\ (atau\ 60\\%)
 $$
 $$
-(1 − P) = 0.40\ (atau\ 40\%)
+(1 − P) = 0.40\ (atau\ 40\\% )
 $$
 
 
@@ -340,7 +342,7 @@ $$
 \text{Speedup}(2) = \frac{1}{(1 - 0.60) + \frac{0.60}{2}} = \frac{1}{0.40 + 0.30} = \frac{1}{0.70} \approx 1.43
 $$
 
-Artinya, kecepatan meningkat sekitar 1.43 kali lipat dibanding versi single-core.
+Artinya, kecepatan meningkat sekitar <b>1.43 kali</b> lipat dibanding versi single-core.
 
 ### Empat Inti Prosesor (N = 4)
 
@@ -348,7 +350,7 @@ $$
 \text{Speedup}(4) = \frac{1}{(1 - 0.60) + \frac{0.60}{4}} = \frac{1}{0.40 + 0.15} = \frac{1}{0.55} \approx 1.82
 $$
 
-Artinya, kecepatan meningkat sekitar 1.82 kali lipat.
+Artinya, kecepatan meningkat sekitar <b>1.82 kali</b> lipat.
 
 
 ---
