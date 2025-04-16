@@ -111,11 +111,11 @@ Program ini bertujuan untuk menghitung jumlah seluruh elemen dalam array berisi 
 
 Kelas <code>SumTask</code> memperluas <code>RecursiveTask\<Integer></code> dan digunakan untuk membagi tugas secara rekursif:
 
-Jika jumlah elemen yang akan dijumlahkan kurang dari 1000, program menjumlahkan langsung dengan perulangan.
+- Jika jumlah elemen yang akan dijumlahkan kurang dari 1000, program menjumlahkan langsung dengan perulangan.
 
-Jika lebih, array dibagi dua, dan dua tugas baru dibuat untuk masing-masing bagian.
+- Jika lebih, array dibagi dua, dan dua tugas baru dibuat untuk masing-masing bagian.
 
-Kedua tugas dijalankan secara paralel menggunakan <code>fork()</code>, dan hasilnya digabung dengan <code>join()</code>.
+- Kedua tugas dijalankan secara paralel menggunakan <code>fork()</code>, dan hasilnya digabung dengan <code>join()</code>.
 
 Tugas utama dijalankan oleh <code>ForkJoinPool</code>, yang secara otomatis mengatur pembagian thread. Dengan pendekatan ini, program memanfaatkan multithreading untuk mempercepat proses penjumlahan pada prosesor multi-core melalui paralelisme tugas (<b>task parallelism</b>).
 
@@ -196,7 +196,7 @@ Program ini dirancang untuk menghitung jumlah bilangan dari 1 hingga N menggunak
 
 Setelah thread tambahan menyelesaikan tugasnya, hasil penjumlahan disimpan dalam variabel global bernama sum, lalu ditampilkan ke layar oleh thread utama.
 
-Contohnya, jika pengguna menjalankan program dengan argumen 10, maka thread akan menghitung 1 + 2 + ... + 10, dan hasil 55 akan dicetak.
+Contohnya, jika pengguna menjalankan program dengan argumen 10, maka thread akan menghitung 1 + 2 + ... + 15, dan hasil 120 akan dicetak.
 
 Program ini menunjukkan bagaimana multithreading dapat digunakan untuk memisahkan tugas-tugas tertentu, meskipun dalam contoh ini hanya digunakan satu thread tambahan.
 
