@@ -104,7 +104,8 @@ public class SumTask extends RecursiveTask<Integer> {
 
 #### **Output**
 
-![image](https://github.com/user-attachments/assets/2b393d72-3e40-47c9-8f44-ae4b6c20e3a1)
+![image](https://github.com/user-attachments/assets/18440ea5-3a45-4bd6-aa95-541778ea8c44)
+
 
 #### **Apa yang terjadi ?**
 Program ini bertujuan untuk menghitung jumlah seluruh elemen dalam array berisi 10.000 angka acak menggunakan Fork/Join Framework di Java.
@@ -257,7 +258,7 @@ int main(int argc, char *argv[]) {
 
 #### **Output**
 
-![Screenshot 2025-04-18 180126](https://github.com/user-attachments/assets/b6b1bdfb-18b9-4e00-87b2-2791b1c1b7ca)
+![image](https://github.com/user-attachments/assets/232368ca-6cc4-4560-959e-d5e709792d35)
 
 
 #### **Apa yang terjadi ?**
