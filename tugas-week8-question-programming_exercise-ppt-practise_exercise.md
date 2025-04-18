@@ -263,7 +263,7 @@ int main(int argc, char *argv[]) {
 #### **Apa yang terjadi ?**
 Program ini menggunakan Windows thread untuk menghitung jumlah bilangan dari <code>0</code> hingga <code>N</code>, di mana <code>N</code> adalah angka yang dimasukkan oleh pengguna sebagai argumen. Fungsi <code>Summation</code> dijalankan oleh thread baru dan melakukan penjumlahan, kemudian hasilnya disimpan di variabel global <code>Sum</code>. Thread utama (<code>main</code>) menunggu hingga thread selesai, lalu mencetak hasilnya ke layar.
 
-Contoh: jika dijalankan dengan <code>program.exe 5</code>, maka output-nya adalah <code>sum = 15</code>.
+Contoh: jika dijalankan dengan <code>program.exe 56</code>, maka output-nya adalah <code>sum = 1596</code>.
 
 ---
 ## 3. PPT evolusi teknologi processor Intel
