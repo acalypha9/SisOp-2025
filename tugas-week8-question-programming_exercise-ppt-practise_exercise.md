@@ -111,11 +111,11 @@ Program ini bertujuan untuk menghitung jumlah seluruh elemen dalam array berisi 
 
 Kelas <code>SumTask</code> memperluas <code>RecursiveTask\<Integer></code> dan digunakan untuk membagi tugas secara rekursif:
 
-- Jika jumlah elemen yang akan dijumlahkan kurang dari 1000, program menjumlahkan langsung dengan perulangan.
+Jika jumlah elemen yang akan dijumlahkan kurang dari 1000, program menjumlahkan langsung dengan perulangan.
 
-- Jika lebih, array dibagi dua, dan dua tugas baru dibuat untuk masing-masing bagian.
+Jika lebih, array dibagi dua, dan dua tugas baru dibuat untuk masing-masing bagian.
 
-- Kedua tugas dijalankan secara paralel menggunakan <code>fork()</code>, dan hasilnya digabung dengan <code>join()</code>.
+Kedua tugas dijalankan secara paralel menggunakan <code>fork()</code>, dan hasilnya digabung dengan <code>join()</code>.
 
 Tugas utama dijalankan oleh <code>ForkJoinPool</code>, yang secara otomatis mengatur pembagian thread. Dengan pendekatan ini, program memanfaatkan multithreading untuk mempercepat proses penjumlahan pada prosesor multi-core melalui paralelisme tugas (<b>task parallelism</b>).
 
@@ -196,9 +196,74 @@ Program ini dirancang untuk menghitung jumlah bilangan dari 1 hingga N menggunak
 
 Setelah thread tambahan menyelesaikan tugasnya, hasil penjumlahan disimpan dalam variabel global bernama sum, lalu ditampilkan ke layar oleh thread utama.
 
-Contohnya, jika pengguna menjalankan program dengan argumen 10, maka thread akan menghitung 1 + 2 + ... + 15, dan hasil 120 akan dicetak.
+Contohnya, jika pengguna menjalankan program dengan argumen 10, maka thread akan menghitung 1 + 2 + ... + 10, dan hasil 55 akan dicetak.
 
 Program ini menunjukkan bagaimana multithreading dapat digunakan untuk memisahkan tugas-tugas tertentu, meskipun dalam contoh ini hanya digunakan satu thread tambahan.
+
+---
+#### **C. thrd-win32.c (Windows)**
+```c
+/**
+ * This program creates a separate thread using the CreateThread() system call.
+ *
+ * Figure 4.13
+ *
+ * @author Gagne, Galvin, Silberschatz
+ * Operating System Concepts  - Tenth Edition
+ * Copyright John Wiley & Sons - 2018
+ */
+
+#include <stdio.h>
+#include <windows.h>
+
+DWORD Sum;
+
+DWORD WINAPI Summation(PVOID Param) {
+  DWORD Upper = *(DWORD *)Param;
+
+  for (DWORD i = 0; i <= Upper; i++)
+    Sum += i;
+
+  return 0;
+}
+
+int main(int argc, char *argv[]) {
+  DWORD ThreadId;
+  HANDLE ThreadHandle;
+  int Param;
+
+  if (argc != 2) {
+    fprintf(stderr, "An integer parameter is required\n");
+    return -1;
+  }
+
+  Param = atoi(argv[1]);
+
+  if (Param < 0) {
+    fprintf(stderr, "an integer >= 0 is required \n");
+    return -1;
+  }
+
+  ThreadHandle = CreateThread(NULL, 0, Summation, &Param, 0, &ThreadId);
+
+  if (ThreadHandle != NULL) {
+    WaitForSingleObject(ThreadHandle, INFINITE);
+    CloseHandle(ThreadHandle);
+    printf("sum = %d\n", Sum);
+  }
+}
+
+```
+
+#### **Output**
+
+![Screenshot 2025-04-18 180126](https://github.com/user-attachments/assets/b6b1bdfb-18b9-4e00-87b2-2791b1c1b7ca)
+
+
+#### **Apa yang terjadi ?**
+Program ini menggunakan Windows thread untuk menghitung jumlah bilangan dari <code>0</code> hingga <code>N</code>, di mana <code>N</code> adalah angka yang dimasukkan oleh pengguna sebagai argumen. Fungsi <code>Summation</code> dijalankan oleh thread baru dan melakukan penjumlahan, kemudian hasilnya disimpan di variabel global <code>Sum</code>. Thread utama (<code>main</code>) menunggu hingga thread selesai, lalu mencetak hasilnya ke layar.
+
+Contoh: jika dijalankan dengan <code>program.exe 5</code>, maka output-nya adalah <code>sum = 15</code>.
 
 ---
 ## 3. PPT evolusi teknologi processor Intel
@@ -329,10 +394,10 @@ $$
 Dalam soal ini:
 
 $$
-P = 0.60\ (atau\ 60\\%)
+P = 0.60\ (atau\ 60\%)
 $$
 $$
-(1 − P) = 0.40\ (atau\ 40\\% )
+(1 − P) = 0.40\ (atau\ 40\% )
 $$
 
 
