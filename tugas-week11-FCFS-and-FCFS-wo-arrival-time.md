@@ -159,6 +159,9 @@ Dengan demikian, kode ini secara efektif menggambarkan cara kerja FCFS dalam kas
 - Proses P1 langsung dieksekusi karena tiba pada waktu `0`.  
 - Proses berikutnya (P2, P3, P4) harus menunggu hingga proses sebelumnya selesai, menyebabkan **waiting time tinggi** untuk proses yang tiba belakangan.  
 
+**Gantt Chart:**  
+![fcfs-gantt](https://github.com/user-attachments/assets/4f3fbb9a-709c-4d88-921c-0c42a051fa34)
+
 ---
 
 ### 4.2 FCFS Tanpa Arrival Time  
@@ -188,6 +191,9 @@ Dengan demikian, kode ini secara efektif menggambarkan cara kerja FCFS dalam kas
 **Keterangan:**  
 - Urutan eksekusi murni berdasarkan antrian input.  
 - **Convoy Effect**: Proses dengan *burst time* kecil (P2=4) terpaksa menunggu proses panjang sebelumnya (P1=8).  
+
+**Gantt Chart:**  
+![fcfs-gantt](https://github.com/user-attachments/assets/4f3fbb9a-709c-4d88-921c-0c42a051fa34)
 
 ---
 
