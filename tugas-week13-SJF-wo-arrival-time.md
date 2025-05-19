@@ -120,7 +120,7 @@ Setelah seluruh proses dieksekusi dan metrik dihitung, program menghitung rata-r
 
 **Gantt Chart:**  
 
-![baru](https://github.com/user-attachments/assets/30b2a287-a4b8-47e3-8b7c-6f7147873f97)
+![sjf](https://github.com/user-attachments/assets/c7c84aee-df63-4fc1-b5dd-0f02d42865f8)
 
 ---
 
